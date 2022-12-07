@@ -1,0 +1,146 @@
+body {
+    background-image: linear-gradient(to right, rgba(181, 239, 174, 1), rgba(209, 209, 255, 1), rgba(181, 239, 174, 1));
+} 
+
+#navbar {
+    display: flex;
+    justify-content:space-around;
+    border-bottom: 5px black solid;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font: 25pt 'Courier New', Courier, monospace;
+}
+
+h1 {
+    text-align: center;
+    padding: 3%;
+    font: 50pt 'Courier New', Courier, monospace;
+}
+
+#convention {
+    color:rgb(56, 130, 123);
+    text-decoration: 5pt underline black;
+}
+
+h2 {
+    font: 30pt cursive;
+    text-align: center;
+}
+
+#fun {
+    font: bold 40pt cursive;
+    color:rgb(56, 130, 123);
+}
+
+#activities {
+    width: 500px;
+    height: 300px;
+    margin: auto; 
+    padding: 20px;
+    border: 4px solid rgb(56, 130, 123);
+    border-radius: 50px;
+    background-color: #EAF0F6;
+    line-height: 80px;
+    font: 20pt fantasy;
+}
+
+#fees {
+    font: 20pt 'Courier New', Courier, monospace;
+    border-left: 4px solid rgb(56, 130, 123);
+}
+
+#dates {
+    font: 20pt 'Courier New', Courier, monospace;
+}
+
+#date, #time {
+    color: rgb(56, 130, 123);
+    font-weight: bold;
+}
+
+#pageIntro, h3, .schedule {
+    font: 30pt 'Courier New', Courier, monospace;
+}
+
+.name {
+    font: 20pt fantasy;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.food, .items, .act {
+    font: 15pt fantasy;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+  
+input[type=submit] {
+width: 100%;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+  
+input[type=submit]:hover {
+background-color: #45a049;
+}
+
+#form {
+border-radius: 5px;
+background-color: #f2f2f2;
+padding: 20px;
+}
+
+#more, #more2, #more3, #more4, #more5, #more6, #more7, #more8, #more9, #more10, #more11 {
+    position: absolute;
+    right: 100vw;
+}
+  
+#booth1, #booth2, #booth3, #booth4, #booth5, #shop1, #shop2, #performances1, #performances2, #performances3, #performances4 {
+    display: none; 
+}
+  
+label[for='more'], label[for='more2'], label[for='more3'], label[for='more4'], label[for='more5'], 
+label[for='more6'], label[for='more7'], label[for='more8'], label[for='more9'], label[for='more10'], label[for='more11'] {
+    -moz-appearance: button;
+    appearance: button;
+}
+  
+label[for='more']:after, label[for='more2']:after, label[for='more3']:after, label[for='more4']:after, 
+label[for='more5']:after, label[for='more6']:after, label[for='more7']:after, label[for='more8']:after, 
+label[for='more9']:after, label[for='more10']:after, label[for='more11']:after {
+    content: ' more'
+}
+  
+#more:checked~#booth1, #more2:checked~#booth2, #more3:checked~#booth3, #more4:checked~#booth4, 
+#more5:checked~#booth5, #more6:checked~#shop1, #more7:checked~#shop2, #more8:checked~#performances1, 
+#more9:checked~#performances2, #more10:checked~#performances3, #more11:checked~#performances4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+  
+#more:checked~label[for='more']:after, #more2:checked~label[for='more2']:after, #more3:checked~label[for='more3']:after, 
+#more4:checked~label[for='more4']:after, #more5:checked~label[for='more5']:after, #more6:checked~label[for='more6']:after, 
+#more7:checked~label[for='more7']:after, #more8:checked~label[for='more8']:after, #more9:checked~label[for='more9']:after, 
+#more10:checked~label[for='more10']:after, #more11:checked~label[for='more11']:after {
+    content: ' less'
+}
